@@ -102,6 +102,8 @@ Each argument must be a whole number(Integer) between 0 and 8 inclusive.
 **Input:** 0 turns the output off. 1-8 sets the output to that HDMI input
 **Output:** 0 sets every output to the requested input. 1-8 sets that specific output to the requested input
 
+NOTE: This prompt will only function if the audio channels have been switched to independent mode
+
 #### LOADPRESET
 Takes 1 argument and loads the requested preset
 ```
