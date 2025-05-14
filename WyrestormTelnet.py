@@ -17,7 +17,7 @@ def dictToString(Dict):
 def avValidate():
     # Error check to make sure the correct number of arguments was given.
     if len(sys.argv) <4:
-        print("ERROR: Not enough arguments(2 required). run again with input then output")
+        print("ERROR: Not enough arguments(2 required). Run again with <input> <output>")
         quit()
 
     # Error check to make sure both inputs are Interagers
@@ -25,11 +25,11 @@ def avValidate():
     try:
         argIn = int(sys.argv[2]) #input, 0 is off
     except:
-        err += "ERROR: Input is not an interger. Input should be a number between 0 and 8\n"
+        err += "ERROR: Input is not an Integer. Input should be a number between 0 and 8\n"
     try:
         argOut = int(sys.argv[3]) #ouput, 0 is all
     except:
-        err += "ERROR: Output is not an interger. Output should be a number between 0 and 8\n"
+        err += "ERROR: Output is not an Integer. Output should be a number between 0 and 8\n"
     # if an error occured, output the error and quit the program
     if len(err)>0:
         print(err)
@@ -75,7 +75,7 @@ def presetValidate():
     try:
         arg = int(sys.argv[2]) #input, 0 is off
     except:
-        print("ERROR: Preset is not an interger. Input should be a number between 1 and 3")
+        print("ERROR: Preset is not an Integer. Input should be a number between 1 and 3")
         quit()
     
     # Error check to make sure inputs are in range
